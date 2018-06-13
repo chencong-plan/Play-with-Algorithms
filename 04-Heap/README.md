@@ -1,5 +1,12 @@
 ## 堆和优先队列 Heap And Priority Queue
 
+|                             包名                             |                             解释                             |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| [maxHeapBasic](https://github.com/chencong-plan/Play-with-Algorithms/tree/master/04-Heap/src/cc/ccoder/maxHeapBasic) |               使用数组构建堆(二叉堆)的基本雏形               |
+| [shiftUp](https://github.com/chencong-plan/Play-with-Algorithms/tree/master/04-Heap/src/cc/ccoder/shiftUp) | 包含`maxHeapBasic`包中内容,堆中新增元素，`void:insert(T item)`方法。利用`void:shiftUp(i)`这个方法，将当前节点值和父节点进行比较，以满足堆的基本性质 |
+| [shiftDown](https://github.com/chencong-plan/Play-with-Algorithms/tree/master/04-Heap/src/cc/ccoder/shiftDown) | 包含`maxHeapBasic`包中内容,堆中弹出根节点。`T:extract()`方法。利用`void:shiftDown()`方法，弹出根节点`data[1]`,然后将`data[1]`和尾节点`data[count]`进行交换，然后`count--`，以保证每一次弹出根节点后数组中保存的还是一个堆。 |
+| [heapify](https://github.com/chencong-plan/Play-with-Algorithms/tree/master/04-Heap/src/cc/ccoder/heapify) | 包含`maxHeapBasic`包中内容，同时新增构造器`MaxHeap(T[] arr)`直接通过数组生成堆。包含`HeapSort1:遍历数组元素插入堆`和`HeapSort2:通过数组插入data[count]调用shiftU(i)生成堆`两种排序方式。同时包含了`归并排序MergeSort`、`快速排序QuickSort`、`快速2路排序QuickSort2Ways`、`快速3路排序QuickSort3Ways`、`插入排序InsertSort`等 |
+
 ### 优先队列
 + 普通队列
 > 先进先出，后进后出
